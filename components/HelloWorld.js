@@ -1,7 +1,6 @@
 import { ref } from 'vue';
 import { getTemplate } from 'tao';
 export default {
-  name: 'HelloWorld',
   props: ['str'],
   setup() {
 
@@ -9,5 +8,6 @@ export default {
 
     }
   },
-  template: await getTemplate('/templates/components/helloWorld.html')
+  name: 'HelloWorld',
+  template: await getTemplate('/components/HelloWorld')
 }

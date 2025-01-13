@@ -1,6 +1,6 @@
 import { ref } from 'vue';
 import { getTemplate } from 'tao';
-import HelloWorld from '/components/helloWorld.js';
+import HelloWorld from '/components/HelloWorld.js';
 export default {
   setup() {
     const str = 'Tao';
@@ -11,5 +11,6 @@ export default {
   components: {
     HelloWorld
   },
-  template: await getTemplate('/templates/views/home.html')
+  name: 'Home',
+  template: await getTemplate('/views/Home')
 }

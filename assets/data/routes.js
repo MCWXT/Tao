@@ -2,7 +2,7 @@ export default [
   {
     path: '/',
     name: 'Home',
-    component: () => import('/views/home.js'),
+    component: () => import('/views/Home.js'),
     meta: {
       title: '首页'
     }

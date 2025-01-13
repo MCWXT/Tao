@@ -2,7 +2,9 @@ import { ref } from 'vue';
 import { getTemplate } from 'tao';
 export default {
   setup() {
-    const include = ['Discussion'];
+    const include = [
+      'Home',
+    ]
     return {
       include
     }
@@ -10,5 +12,5 @@ export default {
   components: {
     
   },
-  template: await getTemplate('/templates/app.html')
+  template: await getTemplate('/App')
 }

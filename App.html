@@ -5,7 +5,7 @@
     </header>
     <main>
       <router-view v-slot="{ Component }">
-        <keep-alive :exclude="include">
+        <keep-alive :include="include">
           <component :class="$route.name" :is="Component"></component>
         </keep-alive>
       </router-view>
@@ -13,7 +13,7 @@
     <footer class="footer bg-base-100 text-base-content p-10">
       <aside>
         <span class="text-2xl font-bold">MCWXT</span>
-        <p>Tao.js</p><br>
+        <a class="link" href="https://taojs.mcwxt.top">Tao.js</a><br>
         <p>Copyright © {{new Date().getFullYear()}} - All right reserved by ACME Industries Ltd</p>
       </aside>
     </footer>
