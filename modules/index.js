@@ -4,10 +4,6 @@ export const getTemplate = async (src) => {
   const url = src + '.html';
   return axios.get(url).then((response) => response.data);
 }
-export const httproxy = (url) => {
-  const proxyServer = 'https://proxy.mcwxt.top/';
-  return proxyServer + url;
-};
 export const cache = {
   setItem(key, content) {
     localStorage.setItem(key, typeof content == 'string' ? content : JSON.stringify(content));
